@@ -37,6 +37,13 @@ describe("Roman Nummers controller", function() {
 	it("Should return III for the number 3", function() {
 	   expect(scope.convertNumberToRoman(3)).toBe('III');
 	});
+	
+	it("Should return IV for the number 4", function() {
+	   expect(scope.convertNumberToRoman(4)).toBe('IV');
+	});
 
+	it("Should return VI for the number 6", function() {
+	   expect(scope.convertNumberToRoman(6)).toBe('VI');
+	});
 }); 
 
