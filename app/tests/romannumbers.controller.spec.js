@@ -58,7 +58,9 @@ describe("Roman Nummers controller", function() {
 	   expect(scope.convertNumberToRoman(10)).toBe('X');
 	});
 
-
+	it("Should return XI for the number 11", function() {
+	   expect(scope.convertNumberToRoman(11)).toBe('XI');
+	});
 
 }); 
 
