@@ -61,6 +61,39 @@ describe("Roman Nummers controller", function() {
 	it("Should return XI for the number 11", function() {
 	   expect(scope.convertNumberToRoman(11)).toBe('XI');
 	});
-
+	
+	it("Should return XII for the number 12", function() {
+	   expect(scope.convertNumberToRoman(12)).toBe('XII');
+	});
+	
+	it("Should return XIII for the number 13", function() {
+	   expect(scope.convertNumberToRoman(13)).toBe('XIII');
+	});
+	
+	it("Should return XIV for the number 14", function() {
+	   expect(scope.convertNumberToRoman(14)).toBe('XIV');
+	});
+	
+	it("Should return XV for the number 15", function() {
+	   expect(scope.convertNumberToRoman(15)).toBe('XV');
+	});
+	
+	it("Should return XVI for the number 16", function() {
+	   expect(scope.convertNumberToRoman(16)).toBe('XVI');
+	});
+	
+	it("Should return XX for the number 20", function() {
+	   expect(scope.convertNumberToRoman(20)).toBe('XX');
+	});
+	
+	it("Should return XXI for the number 21", function() {
+	 expect(scope.convertNumberToRoman(21)).toBe('XXI');
+	});
+	
+	it("Should return XXXVII for the number 37", function() {
+	 expect(scope.convertNumberToRoman(37)).toBe('XXXVII');
+	});
+	
+	
 }); 
 
