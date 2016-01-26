@@ -12,7 +12,7 @@ describe("Roman Nummers controller", function() {
 	      
 	    inject(function ($controller, $rootScope) {
 	        scope = $rootScope.$new();
-	        $controller('romanNumbersController', {
+	        $controller('RomanNumbersController', {
 	            $scope: scope
 	        });
 	    });
@@ -21,5 +21,9 @@ describe("Roman Nummers controller", function() {
     it("Should return I for the number 1", function() {
 
 	   expect(scope.convertNumberToRoman(1)).toBe('I');
+	});
+
+	it("Should return V for the number 5", function() {
+	   expect(scope.convertNumberToRoman(5)).toBe('V');
 	});
 });
