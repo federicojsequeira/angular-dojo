@@ -19,11 +19,20 @@ describe("Roman Nummers controller", function() {
 	}); 
 
     it("Should return I for the number 1", function() {
-
 	   expect(scope.convertNumberToRoman(1)).toBe('I');
 	});
 
 	it("Should return V for the number 5", function() {
 	   expect(scope.convertNumberToRoman(5)).toBe('V');
 	});
+
+	it("Should return II for the number 2", function() {
+	   expect(scope.convertNumberToRoman(2)).toBe('II');
+	});
+
+	it("Should return X for the number 10", function() {
+	   expect(scope.convertNumberToRoman(10)).toBe('X');
+	});
+
+
 });
